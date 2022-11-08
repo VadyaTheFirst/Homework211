@@ -5,7 +5,7 @@ public class Main {
         for (byte i = 0; i < Humans.length; i++) {
             System.out.println("Привет! Меня зовут " + Humans[i].getName() + " Я из города " +
                     Humans[i].getTown() + " родился в " + Humans[i].getYearOfBirth() + " году." +
-                    "Я работаю на должности " + Humans[i].getJobTitle() + ". Будем знакомы!");
+                    "Я работаю на должности " + Humans[i].getJobTitle() + ". Будем знакомы !");
         }
     }
 
