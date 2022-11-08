@@ -9,7 +9,7 @@ public class Main {
         }
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) {//
         Human[] Humans = new Human[4];
         Humans[0] = new Human("Максим", 1988, "Минск", "бренд-менеджер");
         Humans[1] = new Human("Аня", 1988, "Москва", "методист образовательных программ");
