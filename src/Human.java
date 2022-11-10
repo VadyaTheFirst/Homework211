@@ -1,8 +1,8 @@
 public class Human {
-    Integer yearOfBirth;
-    String name;
-    String town;
-    String jobTitle;
+   private Integer yearOfBirth;
+   private String name;
+   private String town;
+   private String jobTitle;
 
     public Human(String name, Integer year, String town, String jobTitle) {
         if (name==null || name=="") {
@@ -22,7 +22,7 @@ public class Human {
             this.jobTitle=jobTitle;
         }
 
-        if (year==0){
+        if (year<0){
             this.yearOfBirth=0;
         } else {
             this.yearOfBirth = year;
@@ -51,6 +51,36 @@ public class Human {
         return this.jobTitle;
     }
 
+    public void setYearOfBirth(Integer yearOfBirth) {
+        if (yearOfBirth < 0 || yearOfBirth == null) {
+            this.yearOfBirth = 0;
+        } else {
+            this.yearOfBirth = yearOfBirth;
+        }
+    }
 
+    public void setName(String name) {
+        if (name==null || name==""){
+            this.name = "Информация не указана";
+        } else {
+            this.name=name;
+        }
+    }
+
+    public void setTown(String town) {
+        if (town == null || town=="") {
+            this.town = "Информация не указана";
+        } else {
+            this.town = town;
+        }
+    }
+
+    public void setJobTitle(String jobTitle) {
+        if (getJobTitle() == null) {
+            this.jobTitle= "Информация не указана";
+        } else {
+            this.jobTitle = jobTitle;
+        }
+    }
 }
 
